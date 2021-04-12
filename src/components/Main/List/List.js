@@ -38,5 +38,4 @@ const List = () => {
         </MUIList>
     )
 }
-
 export default List

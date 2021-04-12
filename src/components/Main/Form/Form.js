@@ -9,7 +9,6 @@ const initialState = {
     category: '',
     type: 'Income'
 }
-
 const Form = () => {
     const classes = useStyles()
     const [formData, setFormData] = useState(initialState)
