@@ -12,13 +12,13 @@ export const Provider = ({children}) => {
     const deleteTransaction = (id) => {
         dispatch({
             type: 'DELETE_TRANSACTION',
-            paylaod: id
+            payload: id
         })
     }
     const addTransaction = (transaction) => {
         dispatch({
             type: 'ADD_TRANSACTION',
-            paylaod: transaction
+            payload: transaction
         })
     }
 
