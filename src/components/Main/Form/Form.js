@@ -27,7 +27,7 @@ const Form = () => {
                     <InputLabel>Type</InputLabel>
                     <Select
                         value={formData.type}
-                        onChange={e => setFormData({...FormData, type:e.target.value})}
+                        onChange={e => setFormData({...formData, type:e.target.value})}
                     >
                         <MenuItem value="Income">Income</MenuItem>
                         <MenuItem value="Expense">Expense</MenuItem>
@@ -39,10 +39,10 @@ const Form = () => {
                     <InputLabel>Category</InputLabel>
                     <Select
                         value={formData.category}
-                        onChange={e => setFormData({...FormData, category:e.target.value})}
+                        onChange={e => setFormData({...formData, category:e.target.value})}
                     >
-                        <MenuItem value="Business">Business</MenuItem>
-                        <MenuItem value="Salary">Salary</MenuItem>
+                        <MenuItem value="business">Business</MenuItem>
+                        <MenuItem value="salary">Salary</MenuItem>
                     </Select>
                 </FormControl>
             </Grid>
@@ -52,7 +52,7 @@ const Form = () => {
                     label="Amount" 
                     fullWidth
                     value={formData.amount}
-                    onChange={e => setFormData({...FormData, amount:e.target.value})}
+                    onChange={e => setFormData({...formData, amount:e.target.value})}
                 />
             </Grid>
             <Grid item xs={6}>
@@ -61,7 +61,7 @@ const Form = () => {
                     label="Date" 
                     fullWidth
                     value={formData.date}
-                    onChange={e => setFormData({...FormData, date:e.target.value})}
+                    onChange={e => setFormData({...formData, date:e.target.value})}
                 />
             </Grid>
             <Button className={classes.button} variant="outlined" color="primary" fullWidth>
