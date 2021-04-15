@@ -8,7 +8,8 @@ export const ExpenseTrackerContext = createContext(initialState)
 export const Provider = ({children}) => {
     const [transactions, dispatch] = useReducer(contextReducer, initialState)
 
-    // Action Creators
+    console.log(transactions)
+    // Action Creators OR Dispatch functions
     const deleteTransaction = (id) => {
         dispatch({
             type: 'DELETE_TRANSACTION',
