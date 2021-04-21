@@ -3,6 +3,7 @@ import contextReducer from './contextReducer'
 
 const initialState = []
 
+
 export const ExpenseTrackerContext = createContext(initialState)
 
 export const Provider = ({children}) => {
