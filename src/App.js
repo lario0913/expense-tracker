@@ -1,9 +1,11 @@
 import React from 'react'
 import {Grid} from '@material-ui/core'
+import {PushToTalkButtonContainer, PushToTalkButton, ErrorPanel} from '@speechly/react-ui'
 
 import Details from './components/Details/Details'
 import useStyles from './styles'
 import Main from './components/Main/Main'
+import { FaceRounded } from '@material-ui/icons'
 
 
 const App = () => {
@@ -22,6 +24,11 @@ const App = () => {
           <Details title="Expense" />
         </Grid>
       </Grid>
+      <button>test</button>
+      <PushToTalkButtonContainer>
+        <PushToTalkButton />
+        <ErrorPanel />
+      </PushToTalkButtonContainer>
     </div>
   )
 }
