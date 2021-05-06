@@ -74,7 +74,7 @@ const Form = () => {
             }
         }
         
-    }, [segment])
+    }, [segment,formData])
 
     return (
         <Grid container spacing={2}>

@@ -1,9 +1,8 @@
-import React, {useContext} from 'react'
+import {useContext} from 'react'
 
 import {expenseCategories, resetCategories, incomeCategories} from './constants/categories'
 import {ExpenseTrackerContext} from './context/context'
 
-// bf8debe2-a1f9-4b47-82c4-4e65739cd529
 
 const useTransactions = (title) => {
     resetCategories()
